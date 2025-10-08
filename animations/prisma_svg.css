@@ -1,0 +1,162 @@
+@keyframes move {
+    100% {
+        transform: rotate(var(--angle)) translate(0, 40px);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wave {
+    transform-origin: 500px 500px;
+    opacity: 0.25;
+    animation: move 1.5s linear infinite;
+    mix-blend-mode: screen;
+}
+
+.wave:nth-child(1) {
+    animation-delay: -0.28125s;
+    fill: hsl(22.5deg, 100%, 50%);
+    --angle: 22.5deg;
+    transform: rotate(22.5deg) translate(375px, 40px);
+}
+
+.wave:nth-child(2) {
+    animation-delay: -0.5625s;
+    fill: hsl(45deg, 100%, 50%);
+    --angle: 45deg;
+    transform: rotate(45deg) translate(375px, 40px);
+}
+
+.wave:nth-child(3) {
+    animation-delay: -0.84375s;
+    fill: hsl(67.5deg, 100%, 50%);
+    --angle: 67.5deg;
+    transform: rotate(67.5deg) translate(375px, 40px);
+}
+
+.wave:nth-child(4) {
+    animation-delay: -1.125s;
+    fill: hsl(90deg, 100%, 50%);
+    --angle: 90deg;
+    transform: rotate(90deg) translate(375px, 40px);
+}
+
+.wave:nth-child(5) {
+    animation-delay: -1.40625s;
+    fill: hsl(112.5deg, 100%, 50%);
+    --angle: 112.5deg;
+    transform: rotate(112.5deg) translate(375px, 40px);
+}
+
+.wave:nth-child(6) {
+    animation-delay: -1.6875s;
+    fill: hsl(135deg, 100%, 50%);
+    --angle: 135deg;
+    transform: rotate(135deg) translate(375px, 40px);
+}
+
+.wave:nth-child(7) {
+    animation-delay: -1.96875s;
+    fill: hsl(157.5deg, 100%, 50%);
+    --angle: 157.5deg;
+    transform: rotate(157.5deg) translate(375px, 40px);
+}
+
+.wave:nth-child(8) {
+    animation-delay: -2.25s;
+    fill: hsl(180deg, 100%, 50%);
+    --angle: 180deg;
+    transform: rotate(180deg) translate(375px, 40px);
+}
+
+.wave:nth-child(9) {
+    animation-delay: -2.53125s;
+    fill: hsl(202.5deg, 100%, 50%);
+    --angle: 202.5deg;
+    transform: rotate(202.5deg) translate(375px, 40px);
+}
+
+.wave:nth-child(10) {
+    animation-delay: -2.8125s;
+    fill: hsl(225deg, 100%, 50%);
+    --angle: 225deg;
+    transform: rotate(225deg) translate(375px, 40px);
+}
+
+.wave:nth-child(11) {
+    animation-delay: -3.09375s;
+    fill: hsl(247.5deg, 100%, 50%);
+    --angle: 247.5deg;
+    transform: rotate(247.5deg) translate(375px, 40px);
+}
+
+.wave:nth-child(12) {
+    animation-delay: -3.375s;
+    fill: hsl(270deg, 100%, 50%);
+    --angle: 270deg;
+    transform: rotate(270deg) translate(375px, 40px);
+}
+
+.wave:nth-child(13) {
+    animation-delay: -3.65625s;
+    fill: hsl(292.5deg, 100%, 50%);
+    --angle: 292.5deg;
+    transform: rotate(292.5deg) translate(375px, 40px);
+}
+
+.wave:nth-child(14) {
+    animation-delay: -3.9375s;
+    fill: hsl(315deg, 100%, 50%);
+    --angle: 315deg;
+    transform: rotate(315deg) translate(375px, 40px);
+}
+
+.wave:nth-child(15) {
+    animation-delay: -4.21875s;
+    fill: hsl(337.5deg, 100%, 50%);
+    --angle: 337.5deg;
+    transform: rotate(337.5deg) translate(375px, 40px);
+}
+
+.wave:nth-child(16) {
+    animation-delay: -4.5s;
+    fill: hsl(360deg, 100%, 50%);
+    --angle: 360deg;
+    transform: rotate(360deg) translate(375px, 40px);
+}
+
+.circle {
+    transform-origin: 500px 500px;
+    animation: rotate 24s linear infinite;
+}
+
+/* Page Setup */
+svg {
+    width: 100vw;
+    height: 80vh;
+}
+
+body {
+    background: hsl(200, 30%, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.title {
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 8vh;
+    padding: 2.5vh;
+    margin: 0;
+    color: hsl(20, 70%, 90%);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    font-family: 'Unica One', cursive;
+}
